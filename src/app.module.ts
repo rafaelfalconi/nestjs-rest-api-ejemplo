@@ -7,9 +7,9 @@ import { ProductModule } from './product/product.module';
 @Module({
   imports: [
     ProductModule,
-    MongooseModule.forRoot('mongodb://localhost:/nestjs'),
+    MongooseModule.forRoot('mongodb+srv://rafael:edu900fs@unibe.7ujmc.azure.mongodb.net/ejemplo?retryWrites=true&w=majority'),
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
